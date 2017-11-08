@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">PurchasesDemo</string>
+
+    <!--Settings-->
+    <string name="nav_settings">Настройки</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="refusal_descr">Отказ от рекламы </string>
+    <string name="refusal_of_ad">Отказаться от рекламы -> Настройки </string>
+    <string name="refusal_buy">Оформить</string>
+    <string name="no_inet">Нет доступа к интернет</string>
+    <string name="no_google_play">Обновите сервисы и попробуйте снова</string>
+    <string name="refusal_complete">Реклама отключена.Спасибо за поддержку :)</string>
+    <string name="buy">Оформить</string>
+    <string name="buyed">Оформлена</string>
+
+    <!--Login-->
+    <string name="nav_login">Настройки</string>
+    <string name="title_activity_login">Вход</string>
+    <string name="sign_in">Вход</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="enter">Вход</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="enter_google">Или, войдите с помощью</string>
+    <string name="signin_google">Войдите с помощью Google</string>
+    <string name="loading">Загрузка</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="dialog_text">Для Вашей версии системы данная функция недоступна</string>
+
+    <!--Profile-->
+    <string name="title_activity_profile">Профиль</string>
+    <string name="profile_name">Имя</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_town">Город</string>
+    <string name="profile_user_info">О себе</string>
+    <string name="profile_login">Логин</string>
+    <string name="profile_logout">Выход</string>
+    <string name="profile_login_success">Авторизация успешна</string>
+    <string name="profile_login_no_success">Возникла сложность, повторите попытку</string>
+    <string name="profile_log_out">Вы вышли из своего аккаунта</string>
+
+    <!--Purchase-->
+    <string name="purchase_succses">Покупка выполнена успешна</string>
+
+
+    <string-array name="user_profile">
+        <item>@string/profile_name</item>
+        <item>@string/profile_email</item>
+        <item>@string/profile_town</item>
+        <item>@string/profile_login</item>
+        <item>@string/profile_user_info</item>
+
+    </string-array>
+
+
+    <!--EditProfile-->
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="edit_profile_save">Сохранить</string>
+    <string name="edit_profile_cancel">Отмена</string>
+</resources>

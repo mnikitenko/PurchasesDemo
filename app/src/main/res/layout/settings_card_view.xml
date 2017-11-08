@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/category_card_view">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:transitionName="@string/transition_name_layout"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp"
+        app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_recycler_item"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:scaleType="fitCenter"
+                android:transitionName="@string/transition_name_icon"
+                app:srcCompat="@drawable/bee"
+                tools:ignore="MissingPrefix"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:orientation="horizontal"/>
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="Отказ от рекламы"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_toRightOf="@+id/image_recycler_item"
+                android:layout_toEndOf="@+id/image_recycler_item"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/tv_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginTop="22dp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
