@@ -1,6 +1,6 @@
 /*
  * Created by Marina .14/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ * All rights reserved.
  *
  * Last Modification at: 26/06/17
  */

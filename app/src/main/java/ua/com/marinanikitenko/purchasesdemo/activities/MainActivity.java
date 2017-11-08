@@ -1,6 +1,6 @@
 /*
  * Created by Marina .21/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ *  All rights reserved.
  *
  * Last Modification at: 26/06/17
  */
@@ -18,8 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import ua.com.teamgear.beedemo.R;
-import ua.com.teamgear.beedemo.model.User;
+import ua.com.marinanikitenko.purchasesdemo.model.User;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{

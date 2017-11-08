@@ -1,6 +1,6 @@
 /*
  * Created by Marina .21/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ * All rights reserved.
  *
  * Last Modification at: 26/06/17
  */
@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import ua.com.teamgear.beedemo.R;
-import ua.com.teamgear.beedemo.activities.PurchaseActivity;
-import ua.com.teamgear.beedemo.model.PurchasedProduct;
-import ua.com.teamgear.beedemo.model.User;
+import ua.com.marinanikitenko.purchasesdemo.activities.PurchaseActivity;
+import ua.com.marinanikitenko.purchasesdemo.model.PurchasedProduct;
+import ua.com.marinanikitenko.purchasesdemo.model.User;
+
 
 
  /*

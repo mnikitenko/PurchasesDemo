@@ -1,6 +1,6 @@
 /*
  * Created by Marina .21/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ * All rights reserved.
  *
  * Last Modification at: 26/06/17
  */
@@ -33,11 +33,11 @@ import java.util.Arrays;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import ua.com.teamgear.beedemo.R;
-import ua.com.teamgear.beedemo.adapters.ProfileAdapter;
-import ua.com.teamgear.beedemo.application.BeeKeeperApp;
-import ua.com.teamgear.beedemo.model.User;
-import ua.com.teamgear.beedemo.server.GoogleConnection;
+import ua.com.marinanikitenko.purchasesdemo.adapters.ProfileAdapter;
+import ua.com.marinanikitenko.purchasesdemo.application.DemoApp;
+import ua.com.marinanikitenko.purchasesdemo.model.User;
+import ua.com.marinanikitenko.purchasesdemo.server.GoogleConnection;
+
 
 /*
  * Show users information
@@ -189,7 +189,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             user.setName(acct.getDisplayName());
             user.setEmail(acct.getEmail());
             user.setAuthorized(true);
-            user.savePreference(BeeKeeperApp.getContext());
+            user.savePreference(DemoApp.getContext());
             Toast.makeText(this, getResources().getString(R.string.profile_login_success),
                     Toast.LENGTH_SHORT).show();
 

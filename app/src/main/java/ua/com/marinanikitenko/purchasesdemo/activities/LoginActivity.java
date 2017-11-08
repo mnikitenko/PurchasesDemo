@@ -1,8 +1,8 @@
 /*
  * Created by Marina .21/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ * All rights reserved.
  *
- * Last Modification at: 26/06/17
+ *Last Modification at: 26/06/17
  */
 package ua.com.marinanikitenko.purchasesdemo.activities;
 
@@ -23,12 +23,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import ua.com.teamgear.beedemo.R;
-import ua.com.teamgear.beedemo.application.BeeKeeperApp;
-import ua.com.teamgear.beedemo.model.Global;
-import ua.com.teamgear.beedemo.model.User;
-import ua.com.teamgear.beedemo.server.GoogleConnection;
-import ua.com.teamgear.beedemo.utils.BuildVersionCheck;
+import ua.com.marinanikitenko.purchasesdemo.application.DemoApp;
+import ua.com.marinanikitenko.purchasesdemo.model.Global;
+import ua.com.marinanikitenko.purchasesdemo.model.User;
+import ua.com.marinanikitenko.purchasesdemo.server.GoogleConnection;
+import ua.com.marinanikitenko.purchasesdemo.utils.BuildVersionCheck;
+
+
 
 /*
  * Show to user opportunity login in Google account
@@ -156,13 +157,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             user.setName(acct.getDisplayName());
             user.setEmail(acct.getEmail());
             user.setAuthorized(true);
-            user.savePreference(BeeKeeperApp.getContext());
+            user.savePreference(DemoApp.getContext());
             Toast.makeText(this, getResources().getString(R.string.profile_login_success),
                     Toast.LENGTH_SHORT).show();
 
 
-            BeeKeeperApp beeKeeperApp = (BeeKeeperApp) getApplication();
-            beeKeeperApp.getChangesObservable().notifyUserChanges(user);
+            DemoApp demoApp = (DemoApp) getApplication();
+            demoApp.getChangesObservable().notifyUserChanges(user);
 
 
             finish();

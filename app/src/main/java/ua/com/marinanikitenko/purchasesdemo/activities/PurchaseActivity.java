@@ -1,6 +1,6 @@
 /*
  * Created by Marina .21/06/17
- * Copyright (c) 2017 Teamgear. All rights reserved.
+ *  All rights reserved.
  *
  * Last Modification at: 26/06/17
  */
@@ -17,15 +17,16 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-import ua.com.teamgear.beedemo.R;
-import ua.com.teamgear.beedemo.adapters.PurchaseAdapter;
-import ua.com.teamgear.beedemo.application.BeeKeeperApp;
-import ua.com.teamgear.beedemo.enums.PurchaseStatus;
-import ua.com.teamgear.beedemo.model.PurchasedProduct;
-import ua.com.teamgear.beedemo.model.User;
-import ua.com.teamgear.beedemo.notification.ObservableItem;
+import ua.com.marinanikitenko.purchasesdemo.adapters.PurchaseAdapter;
+import ua.com.marinanikitenko.purchasesdemo.application.DemoApp;
+import ua.com.marinanikitenko.purchasesdemo.enums.PurchaseStatus;
+import ua.com.marinanikitenko.purchasesdemo.model.PurchasedProduct;
+import ua.com.marinanikitenko.purchasesdemo.model.User;
+import ua.com.marinanikitenko.purchasesdemo.notification.ObservableItem;
 
-import static ua.com.teamgear.beedemo.model.Log.d;
+import static ua.com.marinanikitenko.purchasesdemo.model.Log.d;
+
+
  /*
   * Show digital products  purchased by the user, their info
   */
@@ -36,7 +37,7 @@ public class PurchaseActivity extends AppCompatActivity implements Observer{
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLayoutManager;
     private PurchaseAdapter mAdapter;
-    private BeeKeeperApp beeKeeperApp;
+    private DemoApp demoApp;
     private PurchasedProduct purchasedProduct;
     private User user;
 
@@ -52,8 +53,8 @@ public class PurchaseActivity extends AppCompatActivity implements Observer{
 
     private void getObserver(){
         //Register observer
-        beeKeeperApp = (BeeKeeperApp) getApplication();
-        beeKeeperApp.getChangesObservable().addObserver(this);
+        demoApp = (DemoApp) getApplication();
+        demoApp.getChangesObservable().addObserver(this);
     }
 
     private void initToolbar(){
@@ -121,7 +122,7 @@ public class PurchaseActivity extends AppCompatActivity implements Observer{
     protected void onDestroy(){
         super.onDestroy();
         //Unregister observer
-        beeKeeperApp.getChangesObservable().deleteObserver(this);
+        demoApp.getChangesObservable().deleteObserver(this);
     }
 
     @Override
